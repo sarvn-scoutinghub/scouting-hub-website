@@ -1,0 +1,1194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <title>Scouting Hub – website demo</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="icon" type="image/png" href="logo/scouting-hub-favicon-dark.png">
+    <link rel="stylesheet" href="css/style.css?v=20261109-lang">
+</head>
+
+<body>
+
+    <!-- SVG LOGO SYMBOL -->
+    <svg width="0" height="0" style="position:absolute">
+        <symbol id="m" viewBox="60 20 400 480">
+
+            <g
+                fill="none"
+                stroke="currentColor"
+                stroke-width="9"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            >
+                <path d="M343 92A172 172 0 0 1 300 403M238 409A172 172 0 1 1 272 67"/>
+                <path d="M256 166H196C160 166 140 186 140 208C140 232 164 246 192 252C216 257 228 274 228 296C228 318 206 330 180 330H118M256 166V366M256 240H316M316 80V328"/>
+            </g>
+
+            <g fill="var(--ac)">
+                <path d="M313 44L331 82H295Z"/>
+                <circle cx="252" cy="397" r="11"/>
+            </g>
+
+            <g
+                fill="none"
+                stroke="var(--ac)"
+                stroke-width="7"
+                stroke-linecap="round"
+            >
+                <path d="M228 415A30 30 0 0 0 276 415M214 427A48 48 0 0 0 290 427M200 438A66 66 0 0 0 304 438"/>
+            </g>
+
+        </symbol>
+    </svg>
+
+
+    <!-- LOADING SCREEN -->
+    <div id="ld">
+
+        <div class="lw">
+            <svg>
+                <use href="#m"></use>
+            </svg>
+
+            <span>Scouting <em>Hub</em></span>
+        </div>
+
+        <div class="bw">
+            <div class="br">
+                <i id="lbar"></i>
+            </div>
+
+            <b id="lnum">0</b>
+        </div>
+
+    </div>
+
+
+    <!-- HEADER -->
+    <header class="hd">
+
+        <div class="wrap">
+
+            <a class="logo" href="#home">
+                <svg>
+                    <use href="#m"></use>
+                </svg>
+
+                <span>Scouting <em>Hub</em></span>
+            </a>
+
+            <nav class="dn">
+                <a href="#home" data-t="2">Home</a>
+                <a href="#services" data-t="3">Services</a>
+                <a href="#about" data-t="5">About</a>
+                <a href="#contact" data-t="6">Contact</a>
+            </nav>
+
+            <div class="tools">
+
+                <div class="dd" id="dd">
+                    <button id="ddb" aria-haspopup="listbox"></button>
+                    <div class="dl" id="dl" role="listbox"></div>
+                </div>
+
+                <a class="btn" href="#enquiry" data-t="7">
+                    Hire talent
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main id="home">
+
+        <!-- HOME PAGE -->
+        <div class="pg on" id="v-home">
+
+            <!-- HERO SECTION -->
+            <section class="hero">
+
+                <div class="wrap hg">
+
+                    <div class="ht">
+
+                        <div class="k" data-t="28">
+                            Germany · Europe
+                        </div>
+
+                        <h1 data-t="8">
+                            Skilled people, <em>placed</em> with purpose.
+                        </h1>
+
+                        <p data-t="9">
+                            We connect skilled workers with trusted employers across Germany and Europe.
+                        </p>
+
+                        <div class="cta3">
+
+                            <a class="cb gd" href="#enquiry" data-tab="0">
+
+                                <svg viewBox="0 0 24 24">
+                                    <circle cx="9" cy="8" r="3"/>
+                                    <path d="M3 20a6 6 0 0 1 12 0M16 5a3 3 0 0 1 0 6M18 20a6 6 0 0 0-3-5"/>
+                                </svg>
+
+                                <span>
+                                    <b data-t="10">Hire skilled workers</b>
+                                    <small data-t="22">For employers</small>
+                                </span>
+
+                            </a>
+
+
+                            <a class="cb k2" href="#enquiry" data-tab="1">
+
+                                <svg viewBox="0 0 24 24">
+                                    <rect x="3" y="7" width="18" height="13" rx="2"/>
+                                    <path d="M9 7V5h6v2M3 13h18"/>
+                                </svg>
+
+                                <span>
+                                    <b data-t="11">Find a job in Europe</b>
+                                    <small data-t="23">For candidates</small>
+                                </span>
+
+                            </a>
+
+
+                            <a class="cb w" href="#enquiry" data-tab="1">
+
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M2 9l10-5 10 5-10 5zM6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/>
+                                </svg>
+
+                                <span>
+                                    <b data-t="18">Apprenticeship support</b>
+                                    <small data-t="101">For young talent</small>
+                                </span>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="hv" data-cursor="Scroll">
+
+                    <div class="tr" id="tr"></div>
+
+                    <div class="hc">
+                        <div class="dts" id="hd"></div>
+                        <span id="cl"></span>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- SERVICES SECTION -->
+            <section class="s w">
+
+                <div class="wrap">
+
+                    <div class="lb rv" data-t="3">Services</div>
+
+                    <h2 class="rv" data-t="119">
+                        Everything you need, <em>in one place</em>.
+                    </h2>
+
+                    <div class="g4 rv" id="sv1"></div>
+
+                </div>
+
+            </section>
+
+
+            <!-- TALENT SECTION -->
+            <section class="s talent">
+
+                <div class="wrap">
+
+                    <div class="lb rv" data-t="36">Our talent</div>
+
+                    <h2 class="rv" data-t="12">
+                        Trades we <em>place</em>
+                    </h2>
+
+                    <div class="g rv" id="cards"></div>
+
+                </div>
+
+            </section>
+
+
+            <!-- HOW IT WORKS -->
+            <section class="s w">
+
+                <div class="wrap">
+
+                    <div class="lb rv" data-t="4">How it works</div>
+
+                    <h2 class="rv" data-t="20">
+                        Five steps, <em>one</em> partner.
+                    </h2>
+
+                    <div class="sv rv">
+
+                        <!-- EMPLOYERS -->
+                        <div class="sp e">
+
+                            <div class="hh">
+
+                                <div class="bi">
+                                    <svg class="ic" viewBox="0 0 24 24">
+                                        <circle cx="9" cy="8" r="3"/>
+                                        <path d="M3 20a6 6 0 0 1 12 0M16 5a3 3 0 0 1 0 6M18 20a6 6 0 0 0-3-5"/>
+                                    </svg>
+                                </div>
+
+                                <h3 data-t="22">For employers</h3>
+
+                            </div>
+
+                            <div class="stp">
+
+                                <div class="st">
+                                    <b>1</b>
+                                    <h4 data-t="43"></h4>
+                                    <p data-t="44"></p>
+                                </div>
+
+                                <div class="st">
+                                    <b>2</b>
+                                    <h4 data-t="45"></h4>
+                                    <p data-t="46"></p>
+                                </div>
+
+                                <div class="st">
+                                    <b>3</b>
+                                    <h4 data-t="51"></h4>
+                                    <p data-t="52"></p>
+                                </div>
+
+                            </div>
+
+                            <a class="btn" href="#enquiry" data-tab="0" data-t="10">
+                                Hire skilled workers
+                            </a>
+
+                        </div>
+
+
+                        <!-- CANDIDATES -->
+                        <div class="sp cn">
+
+                            <div class="hh">
+
+                                <div class="bi">
+                                    <svg class="ic" viewBox="0 0 24 24">
+                                        <rect x="3" y="7" width="18" height="13" rx="2"/>
+                                        <path d="M9 7V5h6v2M3 13h18"/>
+                                    </svg>
+                                </div>
+
+                                <h3 data-t="23">For candidates</h3>
+
+                            </div>
+
+                            <div class="stp">
+
+                                <div class="st">
+                                    <b>1</b>
+                                    <h4 data-t="43"></h4>
+                                    <p data-t="44"></p>
+                                </div>
+
+                                <div class="st">
+                                    <b>2</b>
+                                    <h4 data-t="47"></h4>
+                                    <p data-t="48"></p>
+                                </div>
+
+                                <div class="st">
+                                    <b>3</b>
+                                    <h4 data-t="49"></h4>
+                                    <p data-t="50"></p>
+                                </div>
+
+                            </div>
+
+                            <a class="btn d" href="#enquiry" data-tab="1" data-t="11">
+                                Find a job in Europe
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- APPRENTICESHIP SECTION -->
+            <section class="s">
+
+                <div class="wrap">
+
+                    <div class="bn rv" data-cursor="Apply">
+
+                        <div class="pi">
+                            <img alt="Apprenticeship" id="ia">
+                        </div>
+
+                        <div class="tx">
+
+                            <div class="ey" data-t="18">
+                                Apprenticeship support
+                            </div>
+
+                            <h2 data-t="102">
+                                Start your career in <em>Germany</em>.
+                            </h2>
+
+                            <p data-t="42"></p>
+
+                            <div>
+                                <a class="btn" href="#enquiry" data-t="11">
+                                    Find a job in Europe
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- TESTIMONIALS -->
+            <section class="s w">
+
+                <div class="wrap">
+
+                    <div class="lb rv" data-t="61">Testimonials</div>
+
+                    <h2 class="rv" data-t="24">
+                        What people <em>say</em>
+                    </h2>
+
+                    <div class="tb" id="tb"></div>
+
+                    <div class="tn" data-t="64">
+                        Illustrative stories
+                    </div>
+
+                    <div class="tq" id="tq"></div>
+
+                    <div class="nv">
+
+                        <button id="pv" aria-label="Previous">←</button>
+                        <button id="nx" aria-label="Next">→</button>
+
+                        <div class="dts" id="td"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ENQUIRY SECTION -->
+            <section class="s" id="enquiry">
+
+                <div class="wrap">
+
+                    <h2 class="ct2 rv" data-t="104">
+                        Tell us what you <em>need</em>
+                    </h2>
+
+                    <p class="sub2 rv" data-t="105"></p>
+
+                    <div class="eq rv">
+
+                        <div class="tbs" id="tbs"></div>
+
+                        <form id="fm">
+
+                            <div class="f3" id="ff"></div>
+
+                            <div class="ck">
+                                <input id="fk" type="checkbox" required>
+                                <label for="fk" data-t="92"></label>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- SERVICES PAGE -->
+        <div class="pg" id="v-services">
+
+            <section class="hero sv-h">
+
+                <div class="wrap hg">
+
+                    <div class="ht">
+
+                        <div class="ey2" data-t="3">Services</div>
+
+                        <h1 data-t="118">
+                            From the first call to your first day, <em>we guide you</em>.
+                        </h1>
+
+                        <p data-t="9"></p>
+
+                        <div class="cta3">
+
+                            <a class="btn" href="#enquiry" data-tab="0">
+                                <span data-t="22">For employers</span> →
+                            </a>
+
+                            <a class="btn d" href="#enquiry" data-tab="1">
+                                <span data-t="23">For candidates</span> →
+                            </a>
+
+                            <a class="btn o" href="#enquiry" data-tab="1">
+                                <span data-t="18">Apprenticeship support</span> →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="hv">
+                    <div
+                        id="sh"
+                        style="position:absolute;inset:0;background-size:cover;background-position:40% 30%"
+                    ></div>
+                </div>
+
+            </section>
+
+
+            <section class="s w">
+
+                <div class="wrap ct3">
+
+                    <div class="lb rv" data-t="3">Services</div>
+
+                    <h2 class="rv" data-t="119">
+                        Everything you need, <em>in one place</em>.
+                    </h2>
+
+                    <div class="g4 rv" id="sv2"></div>
+
+                </div>
+
+            </section>
+
+
+            <section class="s">
+
+                <div class="wrap">
+
+                    <div class="lb rv" data-t="36">Our talent</div>
+
+                    <h2 class="rv" data-t="12">
+                        Trades we <em>place</em>
+                    </h2>
+
+                    <div class="g rv" id="cards2"></div>
+
+                </div>
+
+            </section>
+
+
+            <section class="s w">
+
+                <div class="wrap">
+
+                    <div class="lb rv" data-t="4">How it works</div>
+
+                    <h2 class="rv" data-t="20">
+                        Five steps, <em>one</em> partner.
+                    </h2>
+
+                    <div class="pn rv" id="steps"></div>
+
+                </div>
+
+            </section>
+
+
+            <section class="s">
+
+                <div class="wrap">
+
+                    <div class="bn rv">
+
+                        <div class="pi" id="art1"></div>
+
+                        <div class="tx">
+
+                            <div class="ey" data-t="137">
+                                The next step
+                            </div>
+
+                            <h2 data-t="25">
+                                Your next chapter starts with a <em>conversation</em>.
+                            </h2>
+
+                            <p data-t="75"></p>
+
+                            <div>
+                                <a class="btn" href="#enquiry" data-tab="0" data-t="26">
+                                    Start an enquiry
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- ABOUT PAGE -->
+        <div class="pg" id="v-about">
+
+            <section class="s w">
+
+                <div class="wrap ah2">
+
+                    <div class="rv">
+
+                        <div class="ey2" data-t="5">About</div>
+
+                        <h1 data-t="120">
+                            Skilled people. Trusted employers. <em>One bridge.</em>
+                        </h1>
+
+                        <p
+                            data-t="32"
+                            style="margin:22px 0 28px;color:#46403a"
+                        ></p>
+
+                        <a class="btn" href="#services">
+                            <span data-t="3">Services</span> →
+                        </a>
+
+                    </div>
+
+                    <div class="ahi rv">
+                        <img id="ah" alt="Handshake">
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- MISSION VISION VALUES -->
+            <section class="s">
+
+                <div class="wrap">
+
+                    <div class="m3 rv">
+
+                        <div>
+                            <div class="ey2" data-t="121">Our mission</div>
+                            <h3 data-t="122">Opening doors in Europe.</h3>
+                            <p data-t="123"></p>
+                        </div>
+
+                        <div>
+                            <div class="ey2" data-t="124">Our vision</div>
+                            <h3 data-t="125">A fair start for every worker.</h3>
+                            <p data-t="126"></p>
+                        </div>
+
+                        <div>
+                            <div class="ey2" data-t="127">Our values</div>
+                            <h3 data-t="128">Honest. Prepared. Caring.</h3>
+                            <p data-t="129"></p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- HOW WE WORK -->
+            <section class="s w">
+
+                <div class="wrap ap2">
+
+                    <div class="rv">
+
+                        <div class="ey2" data-t="130">How we work</div>
+
+                        <h2 data-t="131" style="margin-bottom:24px">
+                            Every placement starts with <em>listening</em>.
+                        </h2>
+
+                        <p data-t="33" style="margin-bottom:16px;color:#46403a"></p>
+                        <p data-t="34" style="margin-bottom:16px;color:#46403a"></p>
+                        <p data-t="35" style="margin-bottom:28px;color:#46403a"></p>
+
+                        <a class="btn d" href="#services">
+                            <span data-t="3">Services</span> →
+                        </a>
+
+                    </div>
+
+                    <div class="chk rv">
+
+                        <h4 data-t="132">What you can count on</h4>
+
+                        <ul id="chk" style="padding:0"></ul>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ABOUT CTA -->
+            <section class="band">
+
+                <div class="art" id="art2"></div>
+
+                <div class="wrap">
+
+                    <span class="pill" data-t="137">
+                        The next step
+                    </span>
+
+                    <h2 data-t="25">
+                        Your next chapter starts with a <em>conversation</em>.
+                    </h2>
+
+                    <p data-t="75"></p>
+
+                    <a class="btn" href="#contact">
+                        <span data-t="6">Contact</span> →
+                    </a>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- CONTACT PAGE -->
+        <div class="pg" id="v-contact">
+
+            <section class="chero">
+
+                <div class="tx">
+
+                    <div class="ey2" data-t="6">Contact</div>
+
+                    <h1 data-t="138" style="margin-bottom:18px">
+                        Let’s talk about <em>your plans</em>.
+                    </h1>
+
+                    <p
+                        data-t="75"
+                        style="color:#46403a;max-width:480px;margin-bottom:26px"
+                    ></p>
+
+                    <div>
+                        <a class="btn" href="#cform">
+                            <span data-t="140">Send a message</span> ↓
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="im2">
+                    <img id="chi" alt="Colleagues meeting and shaking hands">
+                </div>
+
+            </section>
+
+
+            <!-- CONTACT DETAILS AND FORM -->
+            <section class="s" id="cform">
+
+                <div class="wrap ct">
+
+                    <div class="rv">
+
+                        <div class="ey2" data-t="139">
+                            Contact details
+                        </div>
+
+                        <h2 data-t="89">Get in touch</h2>
+
+                        <p class="in" data-t="141"></p>
+
+
+                        <!-- LOCATION -->
+                        <div class="ir">
+
+                            <svg class="ic" viewBox="0 0 24 24">
+                                <path d="M12 21s7-6 7-12a7 7 0 0 0-14 0c0 6 7 12 7 12z"/>
+                                <circle cx="12" cy="9" r="2.5"/>
+                            </svg>
+
+                            <div>
+                                <small data-t="81">Based in</small>
+                                <span data-t="28">Germany · Europe</span>
+                            </div>
+
+                        </div>
+
+
+                        <!-- EMAIL -->
+                        <div class="ir">
+
+                            <svg class="ic" viewBox="0 0 24 24">
+                                <rect x="3" y="5" width="18" height="14" rx="2"/>
+                                <path d="M3 7l9 6 9-6"/>
+                            </svg>
+
+                            <div>
+                                <small data-t="77">Email</small>
+                                <a href="mailto:info@scoutinghub.de">
+                                    info@scoutinghub.de
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <!-- PHONE -->
+                        <div class="ir">
+
+                            <svg class="ic" viewBox="0 0 24 24">
+                                <path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/>
+                            </svg>
+
+                            <div>
+                                <small data-t="76">Phone</small>
+
+                                <a href="tel:+4917663212731">
+                                    +49 176 63212731
+                                </a>
+
+                                ·
+
+                                <a
+                                    href="https://wa.me/4917663212731"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    WhatsApp
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- BUSINESS HOURS -->
+                        <div class="ir">
+
+                            <svg class="ic" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="9"/>
+                                <path d="M12 7v5l3 2"/>
+                            </svg>
+
+                            <div>
+                                <small data-t="79">Hours</small>
+                                <span data-t="80">
+                                    Monday to Friday, 9am to 6pm CET
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="nt" data-t="96"></div>
+
+                    </div>
+
+
+                    <!-- CONTACT FORM -->
+                    <form class="fm rv" id="cf">
+
+                        <div class="ey2" data-t="140">
+                            Send a message
+                        </div>
+
+                        <h3 data-t="95">How can we help?</h3>
+
+                        <div class="fr">
+
+                            <div>
+                                <label data-t="83">Name</label>
+                                <input id="cn" required>
+                            </div>
+
+                            <div>
+                                <label data-t="77">Email</label>
+                                <input id="ce" type="email" required>
+                            </div>
+
+                        </div>
+
+
+                        <div class="fr">
+
+                            <div>
+                                <label data-t="76">Phone</label>
+                                <input id="cp">
+                            </div>
+
+                            <div>
+                                <label data-t="93">Subject</label>
+                                <select id="cs" required></select>
+                            </div>
+
+                        </div>
+
+
+                        <label data-t="91">Your message</label>
+
+                        <textarea id="cm" required></textarea>
+
+
+                        <div class="ck">
+                            <input id="ck2" type="checkbox" required>
+                            <label for="ck2" data-t="92"></label>
+                        </div>
+
+
+                        <button
+                            class="btn"
+                            type="submit"
+                            style="margin-top:18px"
+                        >
+                            <span data-t="116">Send enquiry</span> →
+                        </button>
+
+                        <div class="nt" data-t="97" style="margin-top:6px"></div>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+
+            <!-- CONTACT CTA -->
+            <section class="s w">
+
+                <div class="wrap">
+
+                    <div class="cc rv">
+
+                        <div class="pi" id="art3"></div>
+
+                        <div class="tx">
+
+                            <div class="ey2" data-t="137">
+                                The next step
+                            </div>
+
+                            <h2 data-t="25">
+                                Your next chapter starts with a <em>conversation</em>.
+                            </h2>
+
+                            <p data-t="75"></p>
+
+                            <a class="btn" href="#enquiry" data-tab="0" data-t="26">
+                                Start an enquiry
+                            </a>
+
+                            <a class="btn o" href="mailto:info@scoutinghub.de" data-t="77">
+                                Email
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- RECRUITING SERVICE DETAIL PAGE -->
+        <div class="pg" id="v-recruiting">
+
+            <a class="recruit-back" href="#services" aria-label="Back to Services">← <span>Back</span></a>
+
+            <section class="recruit-hero">
+                <img src="images/recruiting-hero.jpg" alt="Colleagues collaborating around a table">
+                <div class="recruit-intro wrap">
+                    <div class="recruit-crumb">Services / Direct Placement &amp; International Recruiting</div>
+                    <h1>Direct Placement &amp; International Recruiting</h1>
+                    <div class="recruit-kicker">Finding the right talent for your company</div>
+                    <p>Searching for qualified employees can be time-consuming, especially when suitable professionals are sought internationally.</p>
+                    <p>Scouting Hub supports companies with structured candidate searches and guides the recruiting process from needs assessment to preparing the start of employment.</p>
+                </div>
+            </section>
+
+            <section class="s recruit-services">
+                <div class="wrap">
+                    <h2>Our <em>Services</em></h2>
+                    <div class="recruit-service-grid">
+                        <article class="recruit-service-card"><span class="recruit-service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4.5h6M8.5 10h7M8.5 14h7"/></svg></span><h3>Needs analysis</h3><p>Identifying the required qualifications, experience and requirements.</p></article>
+                        <article class="recruit-service-card"><span class="recruit-service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3.5 12h17M12 3c2.4 2.5 3.5 5.5 3.5 9S14.4 18.5 12 21M12 3c-2.4 2.5-3.5 5.5-3.5 9S9.6 18.5 12 21"/></svg></span><h3>International candidate search</h3><p>Identifying potentially suitable candidates through available networks.</p></article>
+                        <article class="recruit-service-card"><span class="recruit-service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="m9 13-1 8 4-2 4 2-1-8M10 9l1.3 1.3L14 8"/></svg></span><h3>Pre-selection and qualification check</h3><p>Review of relevant details and existing proof of qualifications.</p></article>
+                        <article class="recruit-service-card"><span class="recruit-service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v12H9l-5 4zM8 9h8M8 13h5"/></svg></span><h3>Interview coordination</h3><p>Organising and coordinating job interviews between companies and candidates.</p></article>
+                        <article class="recruit-service-card"><span class="recruit-service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 14l2 2 4-4"/></svg></span><h3>Support with the hiring process</h3><p>Assistance with organisational procedures and required documents.</p></article>
+                        <article class="recruit-service-card"><span class="recruit-service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 3-7 18-4-8-8-4zM10 13 21 3"/></svg></span><h3>Support with the start in Germany</h3><p>Depending on the agreed scope of services, coordination of further organisational steps.</p></article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="s recruit-process-section">
+                <div class="wrap">
+                    <h2>Our <em>recruiting process</em></h2>
+                    <div class="recruit-process">
+                        <div class="recruit-steps">
+                            <article><span>1</span><h3>Analysis of your staffing needs</h3></article>
+                            <article><span>2</span><h3>Search for suitable candidates</h3></article>
+                            <article><span>3</span><h3>Pre-selection and coordination of interviews</h3></article>
+                            <article><span>4</span><h3>Support in the selection and hiring process</h3></article>
+                            <article><span>5</span><h3>Coordination of the agreed organisational steps before the start of work</h3></article>
+                        </div>
+                        <p class="recruit-goal">Our goal is to bring companies and suitable talent together efficiently and to enable a structured recruiting process.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="recruit-cta-section">
+                <div class="wrap recruit-cta">
+                    <h2>Are you looking for qualified employees?</h2>
+                    <p>Talk to us about your requirements and your staffing needs.</p>
+                    <a class="btn" href="#enquiry">Send recruiting enquiry <span aria-hidden="true">→</span></a>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="wrap fg">
+
+            <!-- BRAND -->
+            <div>
+
+                <a
+                    class="logo"
+                    href="#home"
+                    style="font-size:36px;gap:14px"
+                >
+
+                    <svg style="width:64px;height:78px">
+                        <use href="#m"></use>
+                    </svg>
+
+                    <span>Scouting <em>Hub</em></span>
+
+                </a>
+
+                <p data-t="90"></p>
+
+            </div>
+
+
+            <!-- NAVIGATION -->
+            <div class="fnav">
+
+                <h4 data-t="88">Navigate</h4>
+
+                <a href="#home" data-t="2">Home</a>
+                <a href="#services" data-t="3">Services</a>
+                <a href="#about" data-t="5">About</a>
+                <a href="#contact" data-t="6">Contact</a>
+
+            </div>
+
+
+            <!-- CONTACT INFORMATION -->
+            <div>
+
+                <h4 data-t="89">Get in touch</h4>
+
+                <div class="ci">
+
+                    <svg class="ic" viewBox="0 0 24 24">
+                        <path d="M12 21s7-6 7-12a7 7 0 0 0-14 0c0 6 7 12 7 12z"/>
+                        <circle cx="12" cy="9" r="2.5"/>
+                    </svg>
+
+                    <span data-t="28">Germany · Europe</span>
+
+                </div>
+
+
+                <div class="ci">
+
+                    <svg class="ic" viewBox="0 0 24 24">
+                        <rect x="3" y="5" width="18" height="14" rx="2"/>
+                        <path d="M3 7l9 6 9-6"/>
+                    </svg>
+
+                    <a href="mailto:info@scoutinghub.de">
+                        info@scoutinghub.de
+                    </a>
+
+                </div>
+
+
+                <div class="ci">
+
+                    <svg class="ic" viewBox="0 0 24 24">
+                        <path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1-2-2z"/>
+                    </svg>
+
+                    <a href="tel:+4917663212731">
+                        +49 176 63212731
+                    </a>
+
+                </div>
+
+
+                <!-- SOCIAL LINKS -->
+                <div class="so">
+
+                    <a href="#" aria-label="LinkedIn">in</a>
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="Instagram">ig</a>
+
+                    <a
+                        href="https://wa.me/4917663212731"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="WhatsApp"
+                    >
+                        wa
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- LEGAL -->
+            <div>
+
+                <h4 data-t="98">Legal notice</h4>
+
+                <a href="#" data-t="99">Privacy policy</a>
+                <a href="#" data-t="100">Terms</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- COPYRIGHT -->
+        <div class="wrap cp">
+
+            <span>© 2026 Scouting Hub</span>
+            <span data-t="28">Germany · Europe</span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- SCROLL PROGRESS -->
+    <div id="rg">
+
+        <svg viewBox="0 0 46 46">
+
+            <circle
+                cx="23"
+                cy="23"
+                r="21"
+                fill="none"
+                stroke="var(--c)"
+                stroke-opacity=".3"
+                stroke-width="1.5"
+            />
+
+            <circle
+                id="pg"
+                cx="23"
+                cy="23"
+                r="21"
+                fill="none"
+                stroke="var(--c)"
+                stroke-width="2"
+                stroke-dasharray="131.9"
+                stroke-dashoffset="131.9"
+            />
+
+        </svg>
+
+        <span id="lbl"></span>
+
+    </div>
+
+
+    <!-- DYNAMIC TOOLTIP -->
+    <div id="dt"></div>
+
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/translations.js"></script>
+    <script src="js/app.js?v=20261109-lang"></script>
+
+</body>
+</html>
